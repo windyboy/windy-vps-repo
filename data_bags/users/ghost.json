@@ -1,0 +1,8 @@
+{
+	"id": "ghost",
+	"groups": [ "www-data" ],
+	"home": "/opt/ghost",
+	"comment": "user for ghost application",
+	"uid": 2001,
+	"shell": "\/bin\/bash"
+}
