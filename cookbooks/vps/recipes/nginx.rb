@@ -7,7 +7,11 @@ template "#{node['nginx']['dir']}/sites-available/default" do
 end
 
 link "/var/www/nginx-default" do
-	to "/opt/ghost"
+	to node['ghost_home']
 	action :create
+end
+
+service "nginx" do
+  action [ :start ]
 end
 

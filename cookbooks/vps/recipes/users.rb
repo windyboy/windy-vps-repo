@@ -9,7 +9,6 @@
 
 include_recipe "users"
 
-users_manage "ghost" do
+users_manage node['ghost_user'] do
 	action :create
-	home	node['ghost_home']
 end

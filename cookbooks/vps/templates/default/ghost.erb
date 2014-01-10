@@ -12,17 +12,18 @@
 # Do NOT "set -e"
 
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
-PATH=/sbin:/usr/sbin:/bin:/usr/bin
-DESC="Ghost"
+#PATH=/sbin:/usr/sbin:/bin:/usr/bin
+DESC="Blog Engine"
 NAME=ghost
-GHOST_ROOT=node['ghost_home']
+GHOST_ROOT=<%= node[:ghost_home] %>
 GHOST_GROUP=ghost
-GHOST_USER=node['ghost_user']
-DAEMON=/usr/bin/node
+GHOST_USER=<%= node[:ghost_user] %>
+DAEMON=/usr/local/bin/node
 DAEMON_ARGS="$GHOST_ROOT/index.js"
 PIDFILE=/var/opt/ghost/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
-export NODE_ENV=production
+#export NODE_ENV=production
+export NODE_ENV=development
 
 # Exit if the package is not installed
 [ -x "$DAEMON" ] || exit 0
