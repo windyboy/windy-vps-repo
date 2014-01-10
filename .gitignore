@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .rake_test_cache
 
 ###
@@ -5,3 +6,23 @@
 ###
 .chef/*.pem
 .chef/encrypted_data_bag_secret
+=======
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
+>>>>>>> fe63fe9024c538a4c898dbf69eda792817de4159

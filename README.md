@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Overview
 ========
 
@@ -64,3 +65,9 @@ Next Steps
 ==========
 
 Read the README file in each of the subdirectories for more information about what goes in those directories.
+=======
+windy-vps-repo
+==============
+
+my private chef administrator repository
+>>>>>>> fe63fe9024c538a4c898dbf69eda792817de4159
